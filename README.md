@@ -1,2 +1,2 @@
-# bearded-octo-wallhack
+# AdventuresInDebugging
 A WinDbg tutorial
