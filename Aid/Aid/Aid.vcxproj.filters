@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Exercises\Basics\Breakpoints\Breakpoints.cpp">
+      <Filter>Exercises\Basics\Breakpoints</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Basics\ReadingMemory\ReadingMemory.cpp">
+      <Filter>Exercises\Basics\ReadingMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Basics\GoingPlaces\GoingPlaces.cpp">
+      <Filter>Exercises\Basics\GoingPlaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Exercises.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Exercises\Basics\WritingMemory\WritingMemory.cpp">
+      <Filter>Exercises\Basics\WritingMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Basics\Disassembly\Disassembly.cpp">
+      <Filter>Exercises\Basics\Disassembly</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Basics\Stack\Stack.cpp">
+      <Filter>Exercises\Basics\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Advanced\Threads\Threads.cpp">
+      <Filter>Exercises\Advanced\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Utils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Basics\Structures\Structures.cpp">
+      <Filter>Exercises\Basics\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\WinApiHelpers\WinApiHelpers.cpp">
+      <Filter>Common\WinApiHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ExerciseHelpers\ExerciseHelpers.cpp">
+      <Filter>Common\ExerciseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Advanced\Children\Children.cpp">
+      <Filter>Exercises\Advanced\Children</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Basics\Exceptions\Exceptions.cpp">
+      <Filter>Exercises\Basics\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Advanced\FailingFunction\FailingFunction.cpp">
+      <Filter>Exercises\Advanced\FailingFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Advanced\RocketScience\RocketScience.cpp">
+      <Filter>Exercises\Advanced\RocketScience</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Advanced\DeadInTheWater\DeadInTheWater.cpp">
+      <Filter>Exercises\Advanced\DeadInTheWater</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Basics\WhatIfs\WhatIfs.cpp">
+      <Filter>Exercises\Basics\WhatIfs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Exercises\Basics\Breakpoints\Breakpoints.hpp">
+      <Filter>Exercises\Basics\Breakpoints</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\ReadingMemory\ReadingMemory.hpp">
+      <Filter>Exercises\Basics\ReadingMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\GoingPlaces\GoingPlaces.hpp">
+      <Filter>Exercises\Basics\GoingPlaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\Basics.hpp">
+      <Filter>Exercises\Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Exercises.hpp">
+      <Filter>Exercises</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\WritingMemory\WritingMemory.hpp">
+      <Filter>Exercises\Basics\WritingMemory</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\Disassembly\Disassembly.hpp">
+      <Filter>Exercises\Basics\Disassembly</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Advanced\Advanced.hpp">
+      <Filter>Exercises\Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\Stack\Stack.hpp">
+      <Filter>Exercises\Basics\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Advanced\Threads\Threads.hpp">
+      <Filter>Exercises\Advanced\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\scoped_resource.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Utils.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\Structures\Structures.hpp">
+      <Filter>Exercises\Basics\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\WinApiHelpers\WinApiHelpers.hpp">
+      <Filter>Common\WinApiHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ExerciseHelpers\ExerciseHelpers.hpp">
+      <Filter>Common\ExerciseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Advanced\Children\Children.hpp">
+      <Filter>Exercises\Advanced\Children</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\Exceptions\Exceptions.hpp">
+      <Filter>Exercises\Basics\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Advanced\FailingFunction\FailingFunction.hpp">
+      <Filter>Exercises\Advanced\FailingFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Advanced\RocketScience\RocketScience.hpp">
+      <Filter>Exercises\Advanced\RocketScience</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Advanced\DeadInTheWater\DeadInTheWater.hpp">
+      <Filter>Exercises\Advanced\DeadInTheWater</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Basics\WhatIfs\WhatIfs.hpp">
+      <Filter>Exercises\Basics\WhatIfs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Exercises">
+      <UniqueIdentifier>{933bcc4a-0fd0-4ed2-9d0b-62c7d96edcce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics">
+      <UniqueIdentifier>{1d57855b-b83c-4008-ae78-e59083751d2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\Breakpoints">
+      <UniqueIdentifier>{41d5275b-a005-47f2-899b-dd6e1786e390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\GoingPlaces">
+      <UniqueIdentifier>{dc2c7494-01fd-46fb-9277-e5e880ff6f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\ReadingMemory">
+      <UniqueIdentifier>{ea6ea18a-5dcf-48b1-a1ce-9625fec10507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\WritingMemory">
+      <UniqueIdentifier>{74f75d56-8021-404b-9481-caa61df56424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\Disassembly">
+      <UniqueIdentifier>{d7e6bf76-437c-49ff-a8a4-189127ae8a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Advanced">
+      <UniqueIdentifier>{baeb70fd-706f-4e23-9cb3-ac56b98a6cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\Stack">
+      <UniqueIdentifier>{361e939f-e6d5-4888-ac1f-0e26b872fcd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Advanced\Threads">
+      <UniqueIdentifier>{f73cbbe3-2206-40f4-90cc-bb64b9f55de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{68319543-a73d-41d0-b26c-1881e024df18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\Structures">
+      <UniqueIdentifier>{60c35b49-2056-4aa3-a18a-c43f15f7bdf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\WinApiHelpers">
+      <UniqueIdentifier>{246a1eac-7bb9-440c-802f-16e3eaa1778c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\ExerciseHelpers">
+      <UniqueIdentifier>{4bd92cdf-534d-40ee-99fe-7784fa52b4a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Advanced\Children">
+      <UniqueIdentifier>{1bc17089-e9c6-4acc-9da8-59d6aa45fc7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\Exceptions">
+      <UniqueIdentifier>{f27e04a5-0f56-41fe-9abd-081ed297e425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Advanced\FailingFunction">
+      <UniqueIdentifier>{9fc36a1f-9557-469f-a5ea-b79d7b95efb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Advanced\RocketScience">
+      <UniqueIdentifier>{a2017637-594e-49f4-827b-221c8bb025fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Advanced\DeadInTheWater">
+      <UniqueIdentifier>{962f548b-aa99-44ac-a5b3-74c0f114cab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Basics\WhatIfs">
+      <UniqueIdentifier>{a219d378-a223-4955-bdb2-1315dd1137e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EACDEC68-0E9F-4C15-BFF4-FA9C4C5DFFD0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Aid</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <NuGetPackageImportStamp>c2a3a1d3</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ForcedIncludeFiles>$(ProjectDir)\Common\Common.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Async</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Async</ExceptionHandling>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Common.hpp" />
+    <ClInclude Include="Common\ExerciseHelpers\ExerciseHelpers.hpp" />
+    <ClInclude Include="Common\scoped_resource.hpp" />
+    <ClInclude Include="Common\Utils.hpp" />
+    <ClInclude Include="Common\WinApiHelpers\WinApiHelpers.hpp" />
+    <ClInclude Include="Exercises\Advanced\Advanced.hpp" />
+    <ClInclude Include="Exercises\Advanced\Children\Children.hpp" />
+    <ClInclude Include="Exercises\Advanced\DeadInTheWater\DeadInTheWater.hpp" />
+    <ClInclude Include="Exercises\Advanced\FailingFunction\FailingFunction.hpp" />
+    <ClInclude Include="Exercises\Advanced\RocketScience\RocketScience.hpp" />
+    <ClInclude Include="Exercises\Advanced\Threads\Threads.hpp" />
+    <ClInclude Include="Exercises\Basics\Basics.hpp" />
+    <ClInclude Include="Exercises\Basics\Breakpoints\Breakpoints.hpp" />
+    <ClInclude Include="Exercises\Basics\Disassembly\Disassembly.hpp" />
+    <ClInclude Include="Exercises\Basics\Exceptions\Exceptions.hpp" />
+    <ClInclude Include="Exercises\Basics\GoingPlaces\GoingPlaces.hpp" />
+    <ClInclude Include="Exercises\Basics\ReadingMemory\ReadingMemory.hpp" />
+    <ClInclude Include="Exercises\Basics\Stack\Stack.hpp" />
+    <ClInclude Include="Exercises\Basics\Structures\Structures.hpp" />
+    <ClInclude Include="Exercises\Basics\WhatIfs\WhatIfs.hpp" />
+    <ClInclude Include="Exercises\Basics\WritingMemory\WritingMemory.hpp" />
+    <ClInclude Include="Exercises\Exercises.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\ExerciseHelpers\ExerciseHelpers.cpp" />
+    <ClCompile Include="Common\Utils.cpp" />
+    <ClCompile Include="Common\WinApiHelpers\WinApiHelpers.cpp" />
+    <ClCompile Include="Exercises\Advanced\Children\Children.cpp" />
+    <ClCompile Include="Exercises\Advanced\DeadInTheWater\DeadInTheWater.cpp" />
+    <ClCompile Include="Exercises\Advanced\FailingFunction\FailingFunction.cpp" />
+    <ClCompile Include="Exercises\Advanced\RocketScience\RocketScience.cpp" />
+    <ClCompile Include="Exercises\Advanced\Threads\Threads.cpp" />
+    <ClCompile Include="Exercises\Basics\Breakpoints\Breakpoints.cpp" />
+    <ClCompile Include="Exercises\Basics\Disassembly\Disassembly.cpp" />
+    <ClCompile Include="Exercises\Basics\Exceptions\Exceptions.cpp" />
+    <ClCompile Include="Exercises\Basics\GoingPlaces\GoingPlaces.cpp" />
+    <ClCompile Include="Exercises\Basics\ReadingMemory\ReadingMemory.cpp" />
+    <ClCompile Include="Exercises\Basics\Stack\Stack.cpp" />
+    <ClCompile Include="Exercises\Basics\Structures\Structures.cpp" />
+    <ClCompile Include="Exercises\Basics\WhatIfs\WhatIfs.cpp" />
+    <ClCompile Include="Exercises\Basics\WritingMemory\WritingMemory.cpp" />
+    <ClCompile Include="Exercises\Exercises.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="..\packages\boost.1.58.0.0\build\native\boost.targets" Condition="Exists('..\packages\boost.1.58.0.0\build\native\boost.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\boost.1.58.0.0\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.58.0.0\build\native\boost.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets'))" />
+  </Target>
+  <Import Project="..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets" Condition="Exists('..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets')" />
+  <Import Project="..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets" Condition="Exists('..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets')" />
+</Project>
