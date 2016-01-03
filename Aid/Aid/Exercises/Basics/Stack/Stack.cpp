@@ -37,10 +37,10 @@ That's the 'k' command and its variations for you.
 			{
 			}
 
-            auto returnAddress = reinterpret_cast<ptrdiff_t>(_ReturnAddress());
-            auto userInput = static_cast<decltype(returnAddress)>(Utils::ExerciseHelpers::ReadNumberHex());
-
-            return returnAddress == userInput;
+			auto returnAddress = reinterpret_cast<ptrdiff_t>(_ReturnAddress());
+			auto userInput = static_cast<decltype(returnAddress)>(Utils::ExerciseHelpers::ReadNumberHex());
+			
+			return returnAddress == userInput;
 		}, &Utils::ExerciseHelpers::NoBreak);
 
 		std::wcout << LR"EOS(
@@ -51,24 +51,17 @@ passed to this function, and then I'll be really impressed.
 
 		Utils::ExerciseHelpers::VerifyLoop([]()
 		{
-			// Volatile to force passing of argument
-			volatile ptrdiff_t param = 1801548883;
-
-			return FunctionWithParams(param);
+			return FunctionWithParams(1801548883);
 		}, &Utils::ExerciseHelpers::NoBreak);
 	}
 
+#pragma optimize("", off)
 	bool Stack::FunctionWithParams(ptrdiff_t param)
 	{
-		// Away with the optimizations!
-		__try
-		{
-			__debugbreak();
-		}
-		__except (EXCEPTION_EXECUTE_HANDLER)
-		{
-		}
+		// Inline the break
+		__debugbreak();
 
 		return param == static_cast<decltype(param)>(Utils::ExerciseHelpers::ReadNumberHex());
 	}
+#pragma optimize("", on)
 }
