@@ -25,12 +25,12 @@ Let's do that now.
 
 	std::wcout << LR"EOS(
 Alrighty then, let's do something else.
-Same thing as above, but now with a symbolic name: kernel32!LoadLibraryW
+Same thing as above, but now with a symbolic name: kernel32!GetLogicalDrives
 )EOS";
 
 	Utils::ExerciseHelpers::VerifyLoop([]()
 	{
-		return IsBreakpointSet(reinterpret_cast<std::uint8_t *>(&::LoadLibraryW));
+		return IsBreakpointSet(reinterpret_cast<std::uint8_t *>(&::GetLogicalDrives));
 	});
 
 	HMODULE module_base = GetModuleHandle(NULL);
