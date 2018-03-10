@@ -1,6 +1,7 @@
 #pragma once
 
 #include <functional>
+#include <intrin.h>
 
 
 namespace Aid { namespace Utils { namespace ExerciseHelpers {

@@ -123,7 +123,7 @@ extern ExerciseExecutor g_exercises =
     }
 };
 
-ExerciseExecutor::ExerciseExecutor(std::initializer_list<const Exercise> exercises) :
+ExerciseExecutor::ExerciseExecutor(std::initializer_list<Exercise> exercises) :
     m_exercises(exercises),
     m_currentExercise(m_exercises.cbegin())
 {

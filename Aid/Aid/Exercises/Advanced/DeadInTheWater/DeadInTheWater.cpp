@@ -9,7 +9,7 @@
 #include "DeadInTheWater.hpp"
 
 
-static const std::vector<const std::wstring> g_badTitles =
+static const std::vector<std::wstring> g_badTitles =
 {
     L"WinDbg",
     /*L"IDA",
