@@ -10,7 +10,7 @@
 namespace Aid {
 
 
-void DoStuff(const std::deque<const std::wstring> & arguments)
+void DoStuff(const std::deque<std::wstring> & arguments)
 {
 	if (1 == arguments.size())
 	{
@@ -45,7 +45,7 @@ int wmain(int argc, wchar_t **argv)
 {
 	try
 	{
-        const std::deque<const std::wstring> arguments(argv, argv + argc);
+        const std::deque<std::wstring> arguments(argv, argv + argc);
 
 		Aid::DoStuff(arguments);
 	}

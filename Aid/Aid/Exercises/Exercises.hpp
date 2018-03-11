@@ -17,7 +17,7 @@ struct Exercise
 class ExerciseExecutor final
 {
 public:
-    ExerciseExecutor(std::initializer_list<const Exercise> exercises);
+    ExerciseExecutor(std::initializer_list<Exercise> exercises);
     ExerciseExecutor(const ExerciseExecutor &other) = delete;
     ExerciseExecutor & operator=(const ExerciseExecutor &other) = delete;
     ~ExerciseExecutor() = default;
@@ -31,7 +31,7 @@ public:
     bool ExecuteOne();
 
 private:
-    typedef std::list<const Exercise> ListType;
+    typedef std::list<Exercise> ListType;
 
     const ListType m_exercises;
     ListType::const_iterator m_currentExercise;

@@ -10,7 +10,7 @@ namespace Aid { namespace Utils { namespace ExerciseHelpers {
 
 static boost::random::mt19937_64 g_generator(std::chrono::high_resolution_clock::now().time_since_epoch().count());
 
-typedef std::vector<const std::wstring> MessageVector;
+typedef std::vector<std::wstring> MessageVector;
 static const MessageVector g_tryAgainMessages =
 {
     L"Let's try that again, shall we?",

@@ -14,12 +14,13 @@
     <ProjectGuid>{EACDEC68-0E9F-4C15-BFF4-FA9C4C5DFFD0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Aid</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
@@ -114,15 +115,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <Import Project="..\packages\boost.1.58.0.0\build\native\boost.targets" Condition="Exists('..\packages\boost.1.58.0.0\build\native\boost.targets')" />
+  <Import Project="..\packages\boost.1.66.0.0\build\native\boost.targets" Condition="Exists('..\packages\boost.1.66.0.0\build\native\boost.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\boost.1.58.0.0\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.58.0.0\build\native\boost.targets'))" />
-    <Error Condition="!Exists('..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets'))" />
-    <Error Condition="!Exists('..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets'))" />
+    <Error Condition="!Exists('..\packages\boost.1.66.0.0\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.66.0.0\build\native\boost.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_filesystem-vc141.1.66.0.0\build\native\boost_filesystem-vc141.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_filesystem-vc141.1.66.0.0\build\native\boost_filesystem-vc141.targets'))" />
+    <Error Condition="!Exists('..\packages\boost_system-vc141.1.66.0.0\build\native\boost_system-vc141.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost_system-vc141.1.66.0.0\build\native\boost_system-vc141.targets'))" />
   </Target>
-  <Import Project="..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets" Condition="Exists('..\packages\boost_filesystem-vc120.1.58.0.0\build\native\boost_filesystem-vc120.targets')" />
-  <Import Project="..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets" Condition="Exists('..\packages\boost_system-vc120.1.58.0.0\build\native\boost_system-vc120.targets')" />
+  <Import Project="..\packages\boost_filesystem-vc141.1.66.0.0\build\native\boost_filesystem-vc141.targets" Condition="Exists('..\packages\boost_filesystem-vc141.1.66.0.0\build\native\boost_filesystem-vc141.targets')" />
+  <Import Project="..\packages\boost_system-vc141.1.66.0.0\build\native\boost_system-vc141.targets" Condition="Exists('..\packages\boost_system-vc141.1.66.0.0\build\native\boost_system-vc141.targets')" />
 </Project>
